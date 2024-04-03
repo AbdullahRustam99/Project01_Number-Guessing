@@ -25,7 +25,7 @@ while (trys >= 0) {
 		console.log(chalk.bold.italic.hex("#D3D600")(`You have ${trys} try left!!!`));
 
 	}
-	trys -= 1
+	trys--
 }
 while (condition) {
 	let tryAgain = await inquirer.prompt([{
@@ -36,7 +36,7 @@ while (condition) {
 	}])
 	condition = tryAgain.try
 	if (condition == true) {
-		let trys = 4
+		let trys = 3
 		while (trys >= 0) {
 			const number: number = Math.floor(Math.random() * 9 + 1);
 
@@ -54,7 +54,7 @@ while (condition) {
 				console.log(chalk.bold.italic.hex("#FF0B01")("Sorry you guess the Wrong Number"));
 				console.log(chalk.bold.italic.hex("#D3D600")(`You have ${trys} try left!!!`));
 			}
-			trys -= 1
+			trys--
 		}
 	} else {
 		console.log(chalk.bold.hex("#E87800")("GoodBy Come Back Later"));
