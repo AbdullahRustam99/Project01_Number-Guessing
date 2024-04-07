@@ -1,6 +1,6 @@
 {
   "name": "doj817_guess-number",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "\"A game of where you have to Guess Number \"",
   "main": "index.js",
   "type": "module",

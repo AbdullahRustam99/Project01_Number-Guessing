@@ -3,6 +3,13 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 
+console.log(chalk.bold("\n#####################################################"));
+console.log(chalk.bold("====================================================="));
+console.log(chalk.bold("\tWelcome To ABDULLAH Number Guessing Game"));
+console.log(chalk.bold("====================================================="));
+console.log(chalk.bold("#####################################################"));
+console.log("\n");
+
 let trys = 3
 let condition = true
 console.log(chalk.bold.hex("#FA0093")("WELCOME TO NUMBER GUESSING GAME"));
@@ -57,7 +64,10 @@ while (condition) {
 			trys--
 		}
 	} else {
-		console.log(chalk.bold.hex("#E87800")("GoodBy Come Back Later"));
+
+		console.log(chalk.bold("\n\n=========================================================="));
+		console.log(chalk.bold("\t\tGood BY Come Back Later"));
+		console.log(chalk.bold("=========================================================="));
 
 	}
 
